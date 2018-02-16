@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node index",
-    "dev": "set DEBUG=express:* & nodemon index"
+    "dev": "nodemon index",
+    "dev:log": "set DEBUG=express:* & nodemon index"
   },
   "engines": {
     "node": "8.9.4"

@@ -15,7 +15,7 @@ class Expert {
 			setTimeout(() => {
 				net.train(data);
 				res(this);
-			}, 10000);
+			}, 0);
 		});
 	}
 
