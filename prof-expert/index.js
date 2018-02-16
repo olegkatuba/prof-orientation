@@ -11,7 +11,12 @@ class Expert {
 	constructor() {
 		this.allProfessions = allProfessions;
 		this.allQuestions = allQuestions;
-		net.train(data);
+		return new Promise((res, rej) => {
+			setTimeout(() => {
+				net.train(data);
+				res(this);
+			}, 10000);
+		});
 	}
 
 	start() {
