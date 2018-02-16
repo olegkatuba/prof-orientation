@@ -12,10 +12,10 @@ class Expert {
 		this.allProfessions = allProfessions;
 		this.allQuestions = allQuestions;
 		return new Promise((res, rej) => {
-			setTimeout(() => {
+			setImmediate(() => {
 				net.train(data);
 				res(this);
-			}, 0);
+			});
 		});
 	}
 
