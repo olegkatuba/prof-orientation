@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <form class="pe--form">
+        <p class="pe--form--question">{{question}}</p>
+        <div class="pe--form--buttons">
+            <button type="button" class="pe--form--yes-button" onclick="giveAnswer('yes')">ДА</button>
+            <button type="button" class="pe--form--dontknow-button" onclick="giveAnswer('dontknow')">НЕ ЗНАЮ</button>
+            <button type="button" class="pe--form--no-button" onclick="giveAnswer('no')">НЕТ</button>
+        </div>
+        <div class="pe--form--buttons">
+            <button type="button" class="pe--form--yes-button" onclick="giveAnswer('ratheryes')">ВОЗМОЖНО</button>
+            <button type="button" class="pe--form--no-button" onclick="giveAnswer('ratherno')">СКОРЕЕ НЕТ</button>
+        </div>
+    </form>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "prof-orientation",
+  "version": "1.0.0",
+  "description": "prof-orientation",
+  "main": "app.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "set DEBUG=express:* & nodemon index"
+  },
+  "dependencies": {
+    "brain.js": "^1.0.0-rc.3",
+    "express": "^4.16.2",
+    "hbs": "^4.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.12"
+  },
+  "author": "Oleg",
+  "license": "ISC"
+}
